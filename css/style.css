@@ -1,0 +1,67 @@
+.dropzone {
+    border: 2px dashed rgba(0,0,0,0.3);
+    width: 98%;
+    margin: 1%;
+}
+
+.acf-file-dropzone-uploader {
+    border: 1px solid #dedede;
+}
+
+.acf-file-dropzone-uploader .no-file {
+    width: 100%;
+}
+
+.acf-file-dropzone-uploader.active {
+    padding: 1em;
+}
+
+.acf-file-dropzone-image, .acf-file-dropzone-uploader img {
+    width: 200px;
+    height: auto;
+}
+
+.acf-file-dropzone-uploader .has-file .hover {
+    z-index: 2;
+}
+
+.acf-file-dropzone-uploader .has-file { display: none; float: left; position: relative; max-width: 100%; }
+.acf-file-dropzone-uploader .no-file { display: block; float: left; position: relative; max-width: 100%; }
+
+.acf-file-dropzone-uploader.active .has-file { display: block; }
+.acf-file-dropzone-uploader.active .no-file { display: none; }
+
+
+.acf-file-dropzone-uploader .hover {
+    position: absolute;
+    top: -11px;
+    right: -11px;
+
+    -webkit-transition: opacity 0.25s 0s ease-in-out, visibility 0s linear 0.25s;
+    -moz-transition: opacity 0.25s 0s ease-in-out, visibility 0s linear 0.25s;
+    -o-transition: opacity 0.25s 0s ease-in-out, visibility 0s linear 0.25s;
+    transition: opacity 0.25s 0s ease-in-out, visibility 0s linear 0.25s;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.acf-file-dropzone-uploader .has-file:hover .hover {
+    -webkit-transition-delay:0s;
+    -moz-transition-delay:0s;
+    -o-transition-delay:0s;
+    transition-delay:0s;
+
+    visibility: visible;
+    opacity: 1;
+}
+
+.acf-file-dropzone-uploader .hover ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.acf-file-dropzone-uploader .hover ul li {
+    margin: 0 0 5px 0;
+}
