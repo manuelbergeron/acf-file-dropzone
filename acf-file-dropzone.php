@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Advanced Custom Fields: File dropzone field
-Plugin URI: http://www.libeo.com/
+Plugin URI: http://www.manuelbergeron.com
 Description: Add a dropzone to upload file without the media manager
 Version: 1.0.0
 Author: Manuel Bergeron
-Author URI: http://www.libeo.com/
+Author URI: http://www.manuelbergeron.com
 License: GPL
 Copyright: Libeo
 */

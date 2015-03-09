@@ -1,12 +1,12 @@
 === Advanced Custom Fields: File Dropzone Field ===
 Contributors: manuelbergeron
 Author: Manuel Bergeron
-Author URI: http://www.libeo.com
-Plugin URI: http://www.libeo.com
+Author URI: http://www.manuelbergeron.com
+Plugin URI: http://www.manuelbergeron.com
 Requires at least: 4.0
 Tested up to: 4.4.2
 Stable tag: trunk
-Homepage: http://www.libeo.com
+Homepage: http://www.manuelbergeron.com
 Version: 1.0.0
 
 Allow the admin or the user to drop a file into a dropzone field to upload
