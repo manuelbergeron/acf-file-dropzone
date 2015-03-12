@@ -56,7 +56,8 @@ jQuery(document).on('acf/setup_fields', function(e, postbox){
             var id = jQuery(this).attr("id");
             var idParts = id.split("_");
             if (idParts.length && idParts.length > 1) {
-                var fieldId = idParts[1];
+                idParts.shift();
+                var fieldId = idParts.join("_");
                 var config = {
                     id : fieldId,
                     parent : jQuery("div.dropzone#" + id, postbox).parent().parent(),
