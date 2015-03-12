@@ -38,7 +38,7 @@ var acfFileDropzoneOptions = {
             jQuery("#" + id).parents(".mejs-container").replaceWith(newPlayer);
             var player = new MediaElementPlayer("#" + id, mediaElementOptions);
         } else if (this.options.params.mediaType == "image") {
-            jQuery("img", this.options.player).attr("src", media.path);
+            jQuery("#dropzone_" + this.options.id).parents(".acf-file-dropzone-uploader").find("img.acf-file-dropzone-image").attr("src", media.path);
         }
 
         this.removeAllFiles();
