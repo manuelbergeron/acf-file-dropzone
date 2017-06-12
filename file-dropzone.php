@@ -158,13 +158,13 @@ class acf_field_file_dropzone extends acf_field {
 	*/
     function input_admin_enqueue_scripts() {
         // register ACF scripts
-        wp_register_script( 'mediaelement', $this->pluginUrl . '/vendor/mediaelement/build/mediaelement-and-player.min.js', array('acf-input'), $this->settings['version'] );
-        wp_register_script( 'dropzone', $this->pluginUrl . '/vendor/dropzone/dist/min/dropzone.min.js', array('acf-input'), $this->settings['version'] );
-        wp_register_script( 'acf-input-file-dropzone', $this->pluginUrl . '/js/acf-file-dropzone.js', array('acf-input'), $this->settings['version'] );
-        wp_register_style( 'dropzone-basic', $this->pluginUrl . '/vendor/dropzone/dist/min/basic.min.css', array('acf-input'), $this->settings['version'] );
-        wp_register_style( 'dropzone', $this->pluginUrl . '/vendor/dropzone/dist/min/dropzone.min.css', array('acf-input'), $this->settings['version'] );
-        wp_register_style( 'acf-input-file-dropzone', $this->pluginUrl . '/css/style.css', array('acf-input'), $this->settings['version'] );
-        wp_register_style( 'mediaelement', $this->pluginUrl . '/vendor/mediaelement/build/mediaelementplayer.min.css', array('acf-input'), $this->settings['version'] );
+        wp_register_script( 'mediaelement', $this->settings['dir'] . '/vendor/mediaelement/build/mediaelement-and-player.min.js', array('acf-input'), $this->settings['version'] );
+        wp_register_script( 'dropzone', $this->settings['dir'] . '/vendor/dropzone/dist/min/dropzone.min.js', array('acf-input'), $this->settings['version'] );
+        wp_register_script( 'acf-input-file-dropzone', $this->settings['dir'] . '/js/acf-file-dropzone.js', array('acf-input'), $this->settings['version'] );
+        wp_register_style( 'dropzone-basic', $this->settings['dir'] . '/vendor/dropzone/dist/min/basic.min.css', array('acf-input'), $this->settings['version'] );
+        wp_register_style( 'dropzone', $this->settings['dir'] . '/vendor/dropzone/dist/min/dropzone.min.css', array('acf-input'), $this->settings['version'] );
+        wp_register_style( 'acf-input-file-dropzone', $this->settings['dir'] . '/css/style.css', array('acf-input'), $this->settings['version'] );
+        wp_register_style( 'mediaelement', $this->settings['dir'] . '/vendor/mediaelement/build/mediaelementplayer.min.css', array('acf-input'), $this->settings['version'] );
 
         wp_localize_script( 'acf-input-file-dropzone', 'acf_input_file_dropzone', array(
             'ajaxurl' => admin_url( 'admin-ajax.php' )
